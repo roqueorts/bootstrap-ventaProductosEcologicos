@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ecotienda</title>
+</head>
+
+<body>
+  <!-- START HERE -->
+  <!-- Sin 
+    <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a class="navbar-brand text-success" href="#">Ecotienda</a>
+      <ul class="navbar-nav"> -->
+  <!-- <nav class="navbar navbar-expand-sm bg-white navbar-light">
+    <div class="container">
+      <a href="index.html" class="navbar-brand text-success">Ecotienda</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Contacto</a>
+          </li>
+          <li class="nav-item mr-2 mb-2">
+            <a class="nav-link btn btn-outline-success d-inline-block text-success" role="button" href="#"><i class="fas fa-user"></i>
+              Mi
+              cuenta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-success d-inline-block text-success" role="button" href="#"><i class="fas fa-shopping-cart"></i>
+              Mi
+              carrito
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <!-- <div class="container"> -->
+  <div class="sticky-top bg-white">
+    <nav class="navbar navbar-expand-md bg-light navbar-light px-0 mx-2">
+      <!-- <div class="container"> -->
+      <a href="index.html" class="navbar-brand text-success">Ecotienda</a>
+      <button class="navbar-toggler border-success mb-1" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="input-group ">
+        <input class="form-control  border-success " type="text" placeholder="Buscar productos">
+        <div class="input-group-append">
+          <button class="btn btn-outline-success " type="button">Buscar</button>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Registrarse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">Contacto</a>
+          </li>
+          <!-- Con borde
+              <li class="nav-item mr-2 mb-2">
+              <a class="nav-link btn btn-outline-success d-inline-block text-success" role="button" href="#" style="padding: 6px;"><i
+                  class="fas fa-user"></i>
+                Mi
+                cuenta
+              </a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link btn d-inline-block text-success" href="#"><i class="fas fa-user"></i>
+              Mi cuenta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-success btn d-inline-block" href="#">
+              <i class="fas fa-shopping-cart"></i>
+              Mi carrito
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- </div> -->
+    </nav>
+    <!--
+        Para no poner un nav 
+        <div>
+        <a href="index.html" class="navbar-brand text-success">Ecotienda</a>
+        <a class="nav-link btn btn-outline-success d-inline-block text-success" role="button" href="#"><i class="fas fa-user"></i>
+          Mi
+          cuenta
+        </a>
+        <a class="nav-link btn btn-outline-success d-inline-block text-success " role="button" href="#"><i class="fas fa-shopping-cart"></i>
+          Mi
+          carrito
+        </a>
+      </div> -->
+    <ul class="nav nav-fill nav-pills bg-light">
+      <li class="nav-item m-2">
+        <a class="nav-link btn btn-outline-success btn-lg p-4" role="button" href="#">Alimentación</a>
+      </li>
+      <li class="nav-item m-2">
+        <a class="nav-link btn btn-outline-success btn-lg p-4" role="button" href="#">Dietética</a>
+      </li>
+      <li class="nav-item m-2">
+        <a class="nav-link btn btn-outline-success btn-lg p-4" role="button" href="#">Belleza</a>
+      </li>
+      <li class="nav-item m-2">
+        <a class="nav-link btn btn-outline-success btn-lg p-4" role="button" href="#">Hogar</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row m-2">
+
+    <div class="col-sm-3 col-md-3">
+
+      <!-- ACCORDION -->
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a href="#collapse1" class="text-success" data-parent="#accordion" data-toggle="collapse">
+                Alimentación
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapse1" class="collapse">
+            <div class="card-body">
+              <ul>
+                <li>Cereales</li>
+                <li>Bebidas</li>
+                <li>Fruta y verdura</li>
+                <li>Yogures</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                Dietética
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapse2" class="collapse">
+            <div class="card-body">
+              <ul>
+                <li>Tipo 1</li>
+                <li>Tipo 2</li>
+                <li>Tipo 3</li>
+                <li>Tipo 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                Belleza
+              </a>
+            </h5>
+          </div>
+
+          <div id="collapse3" class="collapse">
+            <div class="card-body">
+              <ul>
+                <li>Tipo 1</li>
+                <li>Tipo 2</li>
+                <li>Tipo 3</li>
+                <li>Tipo 4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIN ACORDEON-->
+    </div>
+    <div class="col-sm-9 col-md-9" style="border:1px solid #333">
+      <ul>
+        <li>Imagen 1</li>
+        <li>Imagen 2</li>
+        <li>Imagen 3</li>
+        <li>Imagen 4</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- <p class="m-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias,
+      voluptates
+      molestiae
+      aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi.
+      Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae
+      dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius
+      esse fuga, repellat fugit harum quia nihil sit in debitis expedita. Eos, voluptates eum rem voluptatum tempore
+      accusamus soluta enim, animi in voluptatibus aliquam distinctio totam repudiandae necessitatibus quidem
+      consequatur
+      incidunt aliquid ad! Inventore ratione, consequatur eligendi iusto esse iure officia praesentium magni in! Nemo
+      tempora, voluptatem facilis reprehenderit minima reiciendis alias similique est rem debitis id expedita
+      voluptatum
+      porro fugiat magni inventore neque. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates
+      molestiae
+      aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi.
+      Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae
+      dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius
+      esse fuga, repellat fugit harum quia nihil sit in debitis expedita. Eos, voluptates eum rem voluptatum tempore
+      accusamus soluta enim, animi in voluptatibus aliquam distinctio totam repudiandae necessitatibus quidem
+      consequatur
+      incidunt aliquid ad! Inventore ratione, consequatur eligendi iusto esse iure officia praesentium magni in! Nemo
+      tempora, voluptatem facilis reprehenderit minima reiciendis alias similique est rem debitis id expedita
+      voluptatum
+      porro fugiat magni inventore neque. </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae iure natus, fuga provident molestias, voluptates
+      molestiae
+      aperiam sit dicta a assumenda nesciunt quos adipisci reprehenderit animi ipsum unde quasi nobis veniam, modi.
+      Fuga natus harum, maxime corporis rerum, maiores delectus aliquam aut quo incidunt dignissimos temporibus? Vitae
+      dolorem accusamus voluptatibus illo aut nam praesentium obcaecati quaerat cupiditate distinctio tempora eius
+      esse fuga, repellat fugit harum quia nihil sit in debitis expedita. Eos, voluptates eum rem voluptatum tempore
+      accusamus soluta enim, animi in voluptatibus aliquam distinctio totam repudiandae necessitatibus quidem
+      consequatur
+      incidunt aliquid ad! Inventore ratione, consequatur eligendi iusto esse iure officia praesentium magni in! Nemo
+      tempora, voluptatem facilis reprehenderit minima reiciendis alias similique est rem debitis id expedita
+      voluptatum
+      porro fugiat magni inventore neque. </p> -->
+  <!-- </div> -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+  </script>
+</body>
+
+</html>
